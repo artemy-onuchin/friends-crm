@@ -1,0 +1,14 @@
+<ul class="main-menu">
+  @for (item of ItemList; track item.id) {
+    <li class="main-menu__item">
+      <a
+        class="main-menu__item-link"
+        routerLink="{{ item.alias }}"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ item.title }}
+      </a>
+    </li>
+  }
+</ul>

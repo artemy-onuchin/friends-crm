@@ -1,0 +1,17 @@
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  background: var(--color-primary-soft);
+}
+
+.page {
+  flex-grow: 1;
+}
